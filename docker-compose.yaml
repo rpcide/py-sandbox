@@ -1,0 +1,11 @@
+services:
+  py-sandbox:
+    build: .
+    container_name: py_sandbox
+    stdin_open: true
+
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: '0.5'
